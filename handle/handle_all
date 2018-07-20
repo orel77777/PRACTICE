@@ -1,0 +1,6 @@
+#!/bin/bash
+l=$(ls | grep fits)
+for var in $l
+do 
+echo -e "$var\n511\n517\ny\n" | python ./main.py
+done
